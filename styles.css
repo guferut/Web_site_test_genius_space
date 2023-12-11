@@ -39,27 +39,27 @@ ul {
   text-decoration: none;
 }
 .link:hover {
-  color: #819b57;
+  color: var(--color-brand-light);
   font-weight: 600;
 }
 
 /* Hero section */
 .hero-title {
-  color: #faf4ea;
+  color: var(--color-primary-light);
   text-align: center;
   font-size: 128px;
   font-weight: 900;
 }
 .hero-title .accent {
-  color: #819b57;
+  color: var(--color-brand-light);
 }
 .sectoin-title .accent {
   color: var(--color-brand-dark);
 }
 /* Advantages section */
 .advantagest-list {
-  background-color: #819b57;
-  color: #faf4ea;
+  background-color: var(--color-brand-light);
+  color: var(--color-primary-light);
 }
 .advantagest-item {
   font-size: 20px;
@@ -88,20 +88,20 @@ ul {
 }
 /* format */
 .format-title {
-  color: #faf4ea;
+  color: var(--color-primary-light);
   font-weight: 600;
   font-size: 24px;
 }
 .format-text {
-  color: #faf4ea;
+  color: var(--color-primary-light);
   font-weight: 300;
   font-size: 14px;
 }
 .section-listed {
-  color: #465929;
+  color: var(--color-brand-dark);
 }
 footer {
-  color: #faf4ea;
+  color: var(--color-primary-light);
 }
 .adres-link {
   color: var(--color-primary-light);
