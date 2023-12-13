@@ -43,7 +43,7 @@ p {
 }
 .container {
   width: 100%;
-  max-width: 1288px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 /* button */
@@ -67,9 +67,29 @@ p {
 }
 .link:hover {
   color: var(--color-brand-light);
-  font-weight: 600;
 }
+/* Heder */
 
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+.heder-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.heder-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+.heder {
+  background-color: #31261a;
+}
 /* Hero section */
 .hero-title {
   color: var(--color-primary-light);
@@ -86,10 +106,13 @@ p {
 }
 /* Advantages section */
 .advantagest-list {
-  background-color: var(--color-brand-light);
-  color: var(--color-primary-light);
+  display: flex;
+  justify-content: space-between;
+
+  gap: 40px;
 }
 .advantagest-item {
+  color: var(--color-primary-light);
   font-size: 20px;
   font-weight: 300;
 }
@@ -120,12 +143,12 @@ p {
   margin-bottom: 80px;
 }
 .format-title {
-  color: var(--color-primary-light);
+  /* color: var(--color-primary-light); */
   font-weight: 600;
   font-size: 24px;
 }
 .format-text {
-  color: var(--color-primary-light);
+  /* color: var(--color-primary-light); */
   font-weight: 300;
   font-size: 14px;
 }
@@ -167,4 +190,28 @@ footer {
 .contact-title {
   margin-bottom: 16px;
 }
-
+.advantages-section {
+  background-color: var(--color-brand-light);
+  padding: 16px 0px;
+}
+.tradition-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1205px;
+  justify-content: space-between;
+}
+.traditions-text:nth-child(3) {
+  max-width: 335px;
+}
+.tradition-content {
+  max-width: 710px;
+}
+.format-card {
+  border-radius: 16px;
+  border: 1px solid lightgray; /*remov*/
+}
+.format-list {
+  display: flex;
+  gap: 20px;
+  padding: 24px;
+}
