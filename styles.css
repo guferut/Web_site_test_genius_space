@@ -128,7 +128,7 @@ p {
   font-size: 20px;
   font-weight: 300;
 }
-.sectoin-title.accent {
+.sectoin-title.center {
   text-align: center;
 }
 .sectoin-title {
@@ -256,11 +256,31 @@ p {
   display: flex;
   gap: 20px;
   padding: 24px;
+  margin: 0px;
 }
 .cookers-image {
   border-radius: 4px 4px 4px 200px;
-  box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px #A18268;
-
-
-
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 2px #a18268;
 }
+.adress-icon {
+  fill: var(--color-primary-light);
+}
+.carousel-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--color-primary-dark);
+  fill: var(--color-primary-dark);
+}
+.carousel-button:hover{
+  background-color: var(--color-primary-dark);
+  fill: var(--color-primary-light);
+}
+
+
