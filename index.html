@@ -81,26 +81,33 @@
           <h2 class="cookers-h2 sectoin-title accent">
             Наші найкращі <span class="accent">шеф-кухарі</span>
           </h2>
-          <ul>
-            <li>
-              <article>
-                <img class="cookers-image" src="./img/nast9.jpg" alt="Настя" />
+          <ul class="cookers-list">
+            <li class="cookers-item">
+              <article class="cookers-card">
+                
+                  <img class="cookers-image" src="./img/nast9.jpg" alt="Настя" />
+                  <div>
                 <h3 class="cookers-title">Настя</h3>
-                <p>Привіт, я Настя!</p>
-                <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
-                <p>Я випічу для вас найсмачніщі вироби!</p>
+                <div class="cookers-text">
+                  <p>Привіт, я Настя!</p>
+                  <p>Вже 10 років, я втілюю <br> у життя цікаві та смачні ідеї.</p>
+                  <p>Я випічу для вас <br> найсмачніщі вироби            
+                </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="cookers-item">
+              <article class="cookers-card">
+
                 <img class="cookers-image" src="./img/vlad.jpg" alt="Влад" />
+                <div>
                 <h3 class="cookers-title">Влад</h3>
-                <p>Привіт, я Влад!</p>
-                <p>
+                <p class="cookers-text">Привіт, я Влад!</p>
+                <p class="cookers-text">
                   Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша
                   любов, з якою ми ділимось кожен раз з Вами через нашу випічку!
                 </p>
-                <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                <p class="cookers-text">Я зроблю для вас унікальну начинку на будь який смак!</p>
+               </div>
               </article>
             </li>
           </ul>
@@ -109,6 +116,7 @@
       <section class="section" id="forma-section">
         <div class="container">
           <h2 class="format-h2 sectoin-title accent center">Формати</h2>
+         <div class="formats-container">
           <button class="carousel-button" type="button">
             <svg width="16" height="16">
                   <use href="./img/icons.svg#icon-Arrow"></use> 
@@ -157,17 +165,21 @@
                   <use href="./img/icons.svg#icon-Arrow"></use> 
                   </svg>
           </button>
+         </div>
         </div>
       </section>
-      <section class="section" id="contact-section">
+      <section class="contact-section section" id="contact-section">
         <div class="container">
+          <div class="contact-container">
+         <div class="contact-form">
           <h2 class="contact-title sectoin-title">
             Приєднуйся до мережі пекарень
           </h2>
           <p class="section-listed">
             Заповни форму, щоб ми звʼязались з тобою!
           </p>
-          <iframe
+         </div>
+          <iframe class="contact-map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6041.445000286979!2d30.484851695589185!3d50.45758835820487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1701702461456!5m2!1sru!2sua"
             width="603"
             height="595"
@@ -175,17 +187,21 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
+        </div>
           <button class="button" type="button">Замовити дзвінок</button>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <nav>
-          <a href="./index.html">
+        <div class="footer-container">
+        <nav class="footer-naw">
+         <div class="footer-logo">
+          <a class="footer-logo" href="./index.html">
             <img src="./img/logo.svg" alt="logo Сучасна пекарня" />
           </a>
-          <ul>
+         </div>
+          <ul class="footer-menu">
             <li>
               <a class="link" href="#traditions-section">Наші традиції</a>
             </li>
@@ -194,8 +210,8 @@
             <li><a class="link" href="#contact-section">Контакти</a></li>
           </ul>
         </nav>
-        <address>
-          <ul>
+        <address class="footer-addres">
+          <ul class="address-list">
             <li>
               <a class="adres-link" href="tel:+380960000007"
                 >+ 38 (096) 000 00 07</a
@@ -229,11 +245,14 @@
               </a>
             </li>
           </ul>
-          <a class="adres-link" href="#" target="_blank"
+          <div class="address-info">
+            <a class="adres-link" href="#" target="_blank"
             >Політика конфіденційності</a
           >
           <p class="adres-copyright">&copy; 2022 Дані захищені</p>
+          </div>
         </address>
+      </div>
       </div>
     </footer>
   </body>
