@@ -97,6 +97,7 @@ a {
 }
 /* Hero section */
 .hero-section {
+  
   background-image: url(img/background-img.png);
   background-repeat: no-repeat;
   background-position: center top;
@@ -152,24 +153,42 @@ a {
   text-transform: uppercase;
   font-weight: 600;
 }
-.cookers-h2::before {
-  content: "";
-  display: block;
-  width: 352px;
-  border: 2px solid #cfcfbc;
-}
-.cookers-h2::after {
-  content: "";
-  display: block;
-  width: 352px;
-  border: 2px solid #cfcfbc;
-}
+
+
 /* cookers-section */
+.cookers-h2 {
+ 
+  margin: 0 auto 80px;
+  position: relative;
+}
 .cookers-title {
   font-weight: 600;
   font-size: 40px;
   margin-bottom: 16px;
+  
 }
+.cookers-h2::after{
+    content: "";
+  display: block;
+  width: 352px;
+  border: 2px solid #cfcfbc;
+  position: absolute;
+  left: 0;
+  bottom: 24px;
+}
+.cookers-h2::before{
+    content: "";
+  display: block;
+  width: 352px;
+  border: 2px solid #cfcfbc;
+  position: absolute;
+  right: 0;
+bottom: 24px;
+}
+.cookers-h2.accent{
+  text-align: center;
+}
+
 /* format */
 .format-h2 {
   margin-bottom: 80px;
@@ -195,6 +214,7 @@ a {
   background-size: cover;
   background-position: center;
   display: flex;
+  position: relative;
   /* color: var(--color-primary-light); */
 }
 .adres-link {
@@ -221,10 +241,7 @@ a {
 .traditions-title {
   margin-bottom: 42px;
 }
-.cookers-h2 {
-  max-width: 535px;
-  margin: 0 auto 80px;
-}
+
 .contact-title {
   margin-bottom: 16px;
 }
@@ -343,5 +360,51 @@ flex-grow: 1;
 .cookers-text p:last-child {
   margin-bottom: 0px;
 }
-
-
+.footer::before{
+  left: 0;
+  bottom: 0;
+  width: 180px;
+  height: 120px;
+  position: absolute;
+  content: '';
+  background-repeat: no-repeat;
+  background-image: url('img/decor-bread-small.png');
+}
+.footer::after{
+  right: 0;
+  bottom: 0;
+  width: 380px;
+  height: 190px;
+  position: absolute;
+  content: '';
+  background-image: url('img/decor-bread-large.png');
+}
+/* model */
+.backdrop{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal{
+  position: relative;
+  border-radius: 32px;
+  width: 880px;
+  height: 880px;
+  background-color: var(--color-primary-light);
+}
+.modal-btn-close{
+  position: absolute;
+  right: 40px;
+  top: 80px;
+}
+.backdrop.is-hidden{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
